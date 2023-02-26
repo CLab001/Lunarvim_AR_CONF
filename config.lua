@@ -3,7 +3,12 @@
  `lvim` is the global options object
 ]]
 -- vim options
+
+
+vim.opt.guicursor = "i-n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20"
+
 vim.opt.shiftwidth = 2
+
 vim.opt.tabstop = 2
 vim.opt.relativenumber = true
 lvim.transparent_window = true
