@@ -5,6 +5,15 @@
 -- vim options
 
 
+-- Olulised käsud!
+-- :TSUpdate  - Update Language parsers in treesitter
+-- :LvimUpdate
+-- :LvimSyncCorePlugins
+--
+
+
+
+
 vim.opt.guicursor = "i-n-v-c-sm:block,ci-ve:ver25,r-cr-o:hor20"
 
 vim.opt.shiftwidth = 2
@@ -51,10 +60,8 @@ lvim.builtin.indentlines.active = false
 
 
 
-
 -- Automatically install missing parsers when entering buffer
 lvim.builtin.treesitter.auto_install = true
-
 -- lvim.builtin.treesitter.ignore_install = { "haskell" }
 
 -- -- always installed on startup, useful for parsers without a strict filetype
@@ -129,8 +136,12 @@ lvim.keys.normal_mode["<C-x>"] = ":BufferKill<CR>"
 lvim.keys.normal_mode["<C-p>"] = ":Telescope<CR>"
 lvim.keys.normal_mode["<C-j>"] = ":bprevious<CR>"
 lvim.keys.normal_mode["<C-k>"] = ":bnext<CR>"
+-- lvim.keys.normal_mode["<C-f>"] = ":Telescope live_grep<CR>"
+lvim.keys.normal_mode["<C-f>"] = ":Telescope find_files<CR>"
 
 
+
+-- LunarVim has no NerdTree --lvim.keys.normal_mode["<C-t>"] = ":NERDTreeToggle<CR>"
 -- NeoVim configs -> Do not Work in LunarVim
 --nnoremap <C-n> :NERDTree<CR>
 --nnoremap <C-t> :NERDTreeToggle<CR>
