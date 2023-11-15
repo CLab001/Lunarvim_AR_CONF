@@ -5,7 +5,7 @@
 -- vim options
 
 
--- Olulised käsud!
+-- Olulised käsud!  Important commands! 
 -- :TSUpdate  - Update Language parsers in treesitter
 -- :LvimUpdate
 -- :LvimSyncCorePlugins
